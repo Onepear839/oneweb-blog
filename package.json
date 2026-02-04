@@ -2,12 +2,12 @@
   "name": "oneweb",  
   "version": "0.1.0",  
   "private": true,  
-  "scripts": {  
-    "dev": "next dev --turbopack",  
-    "build": "next build",  
-    "start": "next start -p 8080",    
-    "lint": "next lint"  
-  },  
+  "scripts": {
+  "dev": "next dev --turbopack",
+  "build": "next build && next export",
+  "start": "next start -p 8080",
+  "lint": "next lint"
+},  
   "dependencies": {  
     "@tailwindcss/postcss": "^4",  
     "framer-motion": "^12.18.1",  

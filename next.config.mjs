@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true // 保留图片不优化（静态导出必需）
+    unoptimized: true // 保留图片不优化配置（可选，根据你的需求调整）
   },
-  // 新增这一行：启用静态导出，替代被移除的 next export 命令
-  output: 'export',
-  // 可选：如果之前有 output: 'standalone' 请确保已移除
+  // 核心修改：改用 standalone 模式（支持动态路由、服务端渲染）
+  output: 'standalone',
+  // 移除之前添加的 output: 'export'
 };
 
 export default nextConfig;
